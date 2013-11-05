@@ -56,8 +56,8 @@ auth_file = /app/vendor/pgbouncer/users.txt
 pool_mode = ${PGBOUNCER_POOL_MODE:-transaction}
 server_reset_query =
 max_client_conn = 100
-default_pool_size = ${PGBOUNCER_DEFAULT_POOL_SIZE:-1}
-reserve_pool_size = ${PGBOUNCER_RESERVE_POOL_SIZE:-1}
-reserve_pool_timeout = ${PGBOUNCER_RESERVE_POOL_TIMEOUT:-5.0}
+default_pool_size = ${PGBOUNCER_DEFAULT_POOL_SIZE:-15}
+reserve_pool_size = ${PGBOUNCER_RESERVE_POOL_SIZE:-15}
+reserve_pool_timeout = ${PGBOUNCER_RESERVE_POOL_TIMEOUT:-1.0}
 EOFEOF
 
