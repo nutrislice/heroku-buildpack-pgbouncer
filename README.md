@@ -73,7 +73,10 @@ Example usage:
 
 The buildpack will install and configure pgbouncer and stunnel to connect to
 `DATABASE_URL` over a SSL connection. Prepend `bin/start-pgbouncer-stunnel`
-to any process in the Procfile to run pgbouncer and stunnel alongside that process.
+to any process in the Procfile to run pgbouncer and stunnel alongside that process. 
+
+The buildpack exports a `PGBOUNCER_URI` environment variable for the pgbouncer pseudo-DB, 
+which you can use in place of `DATABASE_URL` for database connections. 
 
 Tweak settings
 -----
